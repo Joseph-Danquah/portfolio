@@ -73,6 +73,48 @@
   text-decoration: none;
   cursor: pointer;
 }
+#projectContent{
+  overflow: scroll;
+}
+.close1 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close2 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close3 {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
   </style>
 
 </head>
@@ -160,7 +202,18 @@
                       <!-- Modal content -->
                       <div class="modal-content">
                         <span class="close">&times;</span>
-                        <p>Some text in the Modal..</p>
+                        <div id="projectContent">
+                        <p > <h3>Synomemes</h3> was created as a platform to share memes providing a way for people to connect with each other. Memes make you see the jocular side of a stressful situation, aid in global  communication and cultural exchange and lead to collective coping. 
+                          Memes are very therapeutic in the sense that they help in dealing with mental stress or depression.
+                          The tech stack involved in building this web application are:
+                          <li>PHP</li>
+                          <li>Laravel</li>
+                          <li>JavaScript</li>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>Third Party API Integration</li>
+                        </p>
+                      </div>
                       </div>
                     
                     </div>
@@ -188,8 +241,27 @@
           
                       <!-- Button trigger modal -->
                       
-                      <a  href="" ><button type="button" class="btn btn"><h6>View More About Project</h6></button></a>
+                     <button type="button" class="btn btn" id="myBtn1"><h6>View More About Project</h6></button>
+                     <div id="myModal1" class="modal">
 
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <span class="close1">&times;</span>
+                        <div id="projectContent">
+                        <p > <h3>Xceedmac</h3> was created as a platform to share memes providing a way for people to connect with each other. Memes make you see the jocular side of a stressful situation, aid in global  communication and cultural exchange and lead to collective coping. 
+                          Memes are very therapeutic in the sense that they help in dealing with mental stress or depression.
+                          The tech stack involved in building this web application are:
+                          <li>PHP</li>
+                          <li>Laravel</li>
+                          <li>JavaScript</li>
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>Third Party API Integration</li>
+                        </p>
+                      </div>
+                      </div>
+                    
+                    </div>
                         <br>
                         <br>
                       </div>
@@ -214,8 +286,77 @@
           
                       <!-- Button trigger modal -->
                       
-                      <a  href="" ><button type="button" class="btn btn"><h6>View More About Project</h6></button></a>
+                      <button type="button" class="btn btn" id="myBtn2"><h6>View More About Project</h6></button>
+                      <div id="myModal2" class="modal">
+ 
+                       <!-- Modal content -->
+                       <div class="modal-content">
+                         <span class="close2">&times;</span>
+                         <div id="projectContent">
+                         <p > <h3>TechiSup</h3> was created as a platform to share memes providing a way for people to connect with each other. Memes make you see the jocular side of a stressful situation, aid in global  communication and cultural exchange and lead to collective coping. 
+                           Memes are very therapeutic in the sense that they help in dealing with mental stress or depression.
+                           The tech stack involved in building this web application are:
+                           <li>PHP</li>
+                           <li>Laravel</li>
+                           <li>JavaScript</li>
+                           <li>HTML</li>
+                           <li>CSS</li>
+                           <li>Third Party API Integration</li>
+                         </p>
+                       </div>
+                       </div>
+                     
+                     </div>
+                        <br>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+               
 
+
+
+
+
+              <div class="col-12 mb-4">
+                <div class="card z-depth-2">
+                  <div class="card-body p-0">
+                    <div class="row mx-0">
+                      <div class="col-md-8 grey lighten-4 rounded-left pt-4">
+                        <h4 class="font-weight-bold">Project Name:ThreeanCompany</h4>
+                         <br>
+                        Project Link <a href="#">here</a>
+                      </div>
+                      <div class="col-md-4 text-center pt-4">
+                       
+                       
+                      <!-- Central Modal Medium Success-->
+          
+                      <!-- Button trigger modal -->
+                      
+                      <button type="button" class="btn btn" id="myBtn3"><h6>View More About Project</h6></button>
+                      <div id="myModal3" class="modal">
+ 
+                       <!-- Modal content -->
+                       <div class="modal-content">
+                         <span class="close3">&times;</span>
+                         <div id="projectContent">
+                         <p > <h3>ThreeanCompany</h3> was created as a platform to share memes providing a way for people to connect with each other. Memes make you see the jocular side of a stressful situation, aid in global  communication and cultural exchange and lead to collective coping. 
+                           Memes are very therapeutic in the sense that they help in dealing with mental stress or depression.
+                           The tech stack involved in building this web application are:
+                           <li>PHP</li>
+                           <li>Laravel</li>
+                           <li>JavaScript</li>
+                           <li>HTML</li>
+                           <li>CSS</li>
+                           <li>Third Party API Integration</li>
+                         </p>
+                       </div>
+                       </div>
+                     
+                     </div>
                         <br>
                         <br>
                       </div>
@@ -278,6 +419,73 @@
       if (event.target == modal) {
         modal.style.display = "none";
       }
+    }
+
+    var modal = document.getElementById("myModal1");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn1");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close1")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+     // When the user clicks anywhere outside of the modal, close it
+     window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    var modal = document.getElementById("myModal2");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn2");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close2")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+
+    var modal = document.getElementById("myModal3");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn3");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close3")[0];
+    
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
     }
     </script>
     
